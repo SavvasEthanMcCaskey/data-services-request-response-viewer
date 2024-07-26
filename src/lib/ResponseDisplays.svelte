@@ -23,7 +23,7 @@
     </div>
   {:else if response}
     <div class="bg-white rounded-lg shadow-md overflow-y-auto max-h-[calc(100vh-2rem)]">
-      {#each response as report, reportIndex}
+      {#each response['api/report'] as report, reportIndex}
         <div class="border-b last:border-b-0 p-6">
           <h3 class="text-2xl font-bold mb-4">{report.assignmentTitle} Report Run</h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-sm mb-6">
